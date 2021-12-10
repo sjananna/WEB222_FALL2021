@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="nomalize.css">
+    <title>SAMIA JAHAN ANANNA</title>
+    
+</head>
+<body>
+
+  <header>
+    <nav class="navbar">
+
+        <div class="logo">
+            WEB 222 FINAL_ASSESSMENT
+        </div>
+        
+
+        <ul class="nav-links">
+            <div class="links">
+
+                <li><a href="honesty.html">Honesty</a></li>
+                <li><a href="info.html">Info</a></li>
+                <li><a href="reflection.html">Reflection</a></li>
+
+            </div>
+        </ul>
+    </nav>
+    </header>
+    <h1>INFORMATION</h1>
+
+    <div class="container">
+        <div class="row">
+                    <div class="error" id="firstnameErr"></div>
+                    <div class="error" id="lastnameErr"></div>
+                    <div class="error" id="passwordErr"></div>
+                    <div class="error" id="passwordconfErr"></div>
+                    <div class="error" id="usernameErr"></div>
+                    <div class="error" id="educationErr"></div>
+                    <div class="error" id="emailErr"></div>
+                    <div class="error" id="ageErr"></div>
+                
+            </div>
+            
+                <form class="signup" onsubmit="return validateForm()" name="signup" action="https://httpbin.org/post" method="post">
+
+                    <div class="row">
+                      
+                        <label for="firstname">First Name</label>
+
+                      </div>
+                      
+                        <input type="text" name="firstname" id="firstname">
+
+                      </div>
+                    </div>
+
+                    <div class="row">
+                     
+                        <label for="lastname">Last Name</label>
+
+                      </div>
+                    
+                        <input type="text" id="lastname" name="lastname" >
+
+                      </div>
+                    </div>
+
+                    <div class="row">
+                      
+                        <label for="password">Password</label>
+                      </div>
+                      
+                        <input type="password" name="password" id="password">
+                      </div>
+                    </div>
+
+                    <div class="row">
+                      
+                        <label for="passwordconf">Confirm Password</label>
+                      </div>
+                      
+                        <input type="password" name="passwordconf" id="passwordconf" >
+                        
+                      </div>
+                    </div>
+
+                    <div class="row">
+                     
+                        <label for="username">Username</label>
+                      </div>
+                      
+                        <input type="text" name="username" id="username" required>
+                      </div>
+                    </div>
+
+                    <div class="row">
+                     
+                        <label for="username">Education status</label>
+
+                      </div>
+                     
+                        <input type="radio" id="username" name="education" value="Graduated" >
+                        <label for="educationstatus">Graduated</label>
+                        <div class="row">
+                        <input type="radio" id="username" name="education" value="Current enrolled" >
+                        <label for="educationstatus">Current enrolled</label>
+                      </div>
+                      <div class="row">
+                        <input type="radio" id="username" name="education" value="Did not graduate" >
+                        <label for="educationstatus">Did not graduate</label>
+                      </div>
+
+                      </div>
+          
+                    </div>
+
+                    <div class="row">
+                       
+                          <label for="email">Email</label>
+                        </div>
+                        
+                          <input type="email" name="email" id="email" required>
+                        </div>
+                    </div>
+
+
+                    
+                    <div class="row">
+                        
+                          <label for="age">Age</label>
+                        </div>
+                      
+                          <input type="number" name="age" id="age" >
+                        </div>
+                    </div>
+
+                    <input type="hidden" name="lastName" id="lastName" value="Ananna">
+                    <input type="hidden" name="studentId" id="studentId" value="120435201">
+                    <br><br>
+
+                    <div class="row">
+
+                      <input type="submit" value="Submit">
+                      <input type="button" value="Reset">
+
+                    </div>
+
+                  </form>
+            </div>
+        </div>
+      </div>
+      
+      
+
+      <footer>
+        <div class="center">
+      <p></p>  
+      </div>
+    </footer>
+    <script src="info.js"></script>
+</body>
+</html>
